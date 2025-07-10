@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оновлена сторінка "Сервіс" для chery.od.ua</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap">
+</head>
+
+<body>
+
+    <div class="container">
+        <section>
+            <h1>Надійне сервісне обслуговування автомобілів Chery в Одесі від офіційного сервісного центру</h1>
+            <p>
+                Chery OD.UA — офіційний сервісний центр у Одесі. Ми надаємо повний спектр послуг з технічного
+                обслуговування та ремонту автомобілів Chery.</p>
+            <p>Використовуємо тільки оригінальні запчастини та сучасне
+                обладнання, гарантуємо якість і професійний підхід до кожного авто. Наша команда — це сертифіковані
+                майстри з досвідом, які цінують час клієнта та пропонують зручний онлайн-запис.
+            </p>
+        </section>
+
+        <section class="record-form" id="record-form">
+            <form class="service-form" method="post" action="/send-service-request">
+                <h2>Записатись на сервіс</h2>
+                <div class="form-group">
+                    <label for="model">Модель авто:</label>
+                    <input type="text" id="model" name="model" required autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="vin">VIN-номер авто:</label>
+                    <input type="text" id="vin" name="vin" required maxlength="17" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="reason">Причина заявки:</label>
+                    <textarea id="reason" name="reason" rows="2" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="date">Бажана дата проведення огляду:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Ім’я:</label>
+                    <input type="text" id="name" name="name" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" required autocomplete="tel" pattern="^\+?[\d\s\-]{10,15}$"
+                        title="Введіть коректний номер телефону">
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">Я надаю згоду на обробку персональних даних</label>
+                </div>
+                <p class="form-note">Проставивши позначку на сторінці цього інтернет-сайту в пункті «Згода на збір та
+                    обробку персональних даних» Користувач, надає свою згоду на обробку своїх персональних даних
+                    відповідно до Закону України «Про захист персональних даних».</p>
+
+                <button type="submit" class="btn-main">Записатись на сервіс</button>
+            </form>
+        </section>
+
+        <section>
+            <h2 class="block-title">Оригінальні запчастини, сертифіковані майстри, гарантія</h2>
+        </section>
+
+        <section>
+            <h2 class="block-title">Наші послуги</h2>
+            <div class="services-grid">
+                <div class="demo-card">
+                    <h4>Діагностика</h4>
+                    <p>Комп'ютерна діагностика та перевірка всіх систем авто.</p>
+                </div>
+                <div class="demo-card">
+                    <h4>Технічне обслуговування</h4>
+                    <p>Регламентне ТО, заміна мастила, фільтрів, перевірка вузлів.</p>
+                </div>
+                <div class="demo-card">
+                    <h4>Ремонт ходової та електрики</h4>
+                    <p>Професійний ремонт основних вузлів та електроніки.</p>
+                </div>
+                <div class="demo-card">
+                    <h4>Кузовний ремонт</h4>
+                    <p>Відновлення геометрії, фарбування, усунення пошкоджень після ДТП.</p>
+                </div>
+                <div class="demo-card">
+                    <h4>Кондиціонери</h4>
+                    <p>Заправка, діагностика і обслуговування кондиціонерів.</p>
+                </div>
+                <div class="demo-card">
+                    <h4>Шиномонтаж</h4>
+                    <p>Заміна, балансування і ремонт шин.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="block-title">Чому обирають наш сервіс</h2>
+            <div class="adv-grid">
+                <div class="adv-item">Оригінальні запчастини</div>
+                <div class="adv-item">Сертифіковані майстри</div>
+                <div class="adv-item">Гарантія 12 місяців</div>
+                <div class="adv-item">Швидкий сервіс</div>
+                <div class="adv-item">Комфортна зона очікування</div>
+                <div class="adv-item">Зручне розташування</div>
+            </div>
+        </section>
+        <section class="reviews">
+            <h2 class="block-title">Відгуки наших клієнтів</h2>
+            <div class="reviews-list">
+                <div class="review">
+                    <p>“Швидко зробили ТО, ввічливий персонал, детально все пояснили!”</p>
+                    <span>Іван</span>
+                </div>
+                <div class="review">
+                    <p>“Записалася через сайт – зручно, дякую майстрам за якість!”</p>
+                    <span>Марина</span>
+                </div>
+                <div class="review">
+                    <p>“Дуже задоволений сервісом — автомобіль забрали й повернули вчасно, всі роботи виконали якісно!”
+                    </p>
+                    <span>Олександр</span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="block-title">Часті питання</h2>
+            <div class="faq">
+                <div class="faq-item">
+                    <div class="faq-question">Яка гарантія на роботи?</div>
+                    <div class="faq-answer">12 місяців на всі види робіт та запчастини.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Як записатись на сервіс?</div>
+                    <div class="faq-answer">Онлайн через форму, або телефоном.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Чи впливає обслуговування у вас на гарантію авто?</div>
+                    <div class="faq-answer">Ні, ми — офіційний сервіс Chery.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Чи можна приїхати зі своїми запчастинами?</div>
+                    <div class="faq-answer">Можна, але рекомендуємо оригінал для збереження гарантії.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Скільки триває ТО?</div>
+                    <div class="faq-answer">Зазвичай від 1 до 3 годин, залежно від виду робіт.</div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="block-title">Блоки, які залишаються як є</h2>
+            <div class="explain">- “Ми завжди на зв'язку”<br>- Карта<br>- Футер сайту (залишаються без змін)
+            </div>
+        </section>
+
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
